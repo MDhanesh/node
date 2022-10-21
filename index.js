@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use("/", (req, res, next) => {
-  console.log("came first");
+  console.log("came first out");
   var auth = {
     authorised: true,
   };

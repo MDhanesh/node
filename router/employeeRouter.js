@@ -12,8 +12,7 @@ router.delete("/delete/:id", employeeModule.deleteEmployees);
 
 module.exports = router;
 
+// MONGODB_URL=mongodb+srv://XXX:FksMCyYcYMgkUkK9@project.66wonva.mongodb.net/?retryWrites=true&w=majority
+// PORT=3001
 
-MONGODB_URL=mongodb+srv://XXX:FksMCyYcYMgkUkK9@project.66wonva.mongodb.net/?retryWrites=true&w=majority
-PORT=3001
-
-SECERT_KEY=ABCD
+// SECERT_KEY=ABCD
