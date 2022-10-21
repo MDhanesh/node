@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const employeeRouter = require("./router/employeeRouter");
+const registerRouter = require("./router/registerRouter");
 const mongo = require("./connect");
 dotenv.config();
 mongo.connect();
@@ -23,6 +24,7 @@ app.use("/", (req, res, next) => {
     res.send({ msg: "Not Authorised" });
   }
 });
+app.use("/register", registerRouter);
 app.use("/employees", employeeRouter);
 
 app.listen(process.env.PORT);
